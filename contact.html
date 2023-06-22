@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us - Hope for Life Foundation</title>
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+  <style>
+    .logo img {
+      max-width: 100px; 
+      height: auto; 
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+  <style>
+    
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .contact-form label {
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .contact-form .form-group {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .contact-form .form-group .form-field {
+      flex: 1 1 100%;
+      margin-right: 10px;
+    }
+
+    .contact-form .form-group .form-field:last-child {
+      margin-right: 0;
+    }
+
+    .contact-form .form-group .form-field textarea {
+      height: 150px;
+    }
+
+    .contact-form .submit-btn {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="ANSTON (1)-fotor-bg-remover-2023050717540-fotor-bg-remover-2023050717642.png" alt="ANSTON Foundation Logo"> 
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programs.html">Programs and Services</a></li>
+        <li><a href="hiv.html">HIV Facts and Resources</a></li>
+        <li><a href="getinvolved.html">Get Involved</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or inquiries, please don't hesitate to reach out to us. We are here to assist you.</p>
+      
+      <form id="contact-form" class="contact-form" method="POST" action="contact-form-handler.php">
+        <div class="form-group">
+          <div class="form-field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-field">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+        </div>
+        <button class="submit-btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Hope for Life Foundation. All rights reserved.</p>
+      <ul class="social-media-icons">
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> 
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li> 
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li> 
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script> 
+</body>
+</html>
